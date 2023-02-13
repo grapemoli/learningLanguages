@@ -6,22 +6,6 @@ Public Class Form1
     Dim entry As List(Of List(Of String)) = New List(Of List(Of String))()
     Dim index = 0
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub TableLayoutPanel1_Paint(sender As Object, e As PaintEventArgs) Handles TableLayoutPanel1.Paint
-
-    End Sub
-
-    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
-
-    End Sub
-
     Private Sub showButton_Click(sender As Object, e As EventArgs) Handles showButton.Click
         If OpenFileDialog1.ShowDialog() = DialogResult.OK Then ' loads picture the user chose
             PictureBox1.Load(OpenFileDialog1.FileName)
